@@ -21,3 +21,14 @@
 3 - Launching a second web server and using a bootstrap script pasted in below on the dashboard to do everything that we manually just did on the webserver-01 instance
 <img width="1434" alt="ec25" src="https://github.com/user-attachments/assets/2c5fd25d-896e-40a4-8f0a-79e0cf64d267"></br>
 4 - checking to ensure that apache was installed and properly running on the instance
+<h2>Set up a WordPress Site using EC2 and RDS</h2>
+<img width="1438" alt="word1" src="https://github.com/user-attachments/assets/82f36bdb-95be-4fd8-9149-b617f6bdcc2b">
+1 - Set up RDS database using MySQL engine
+<img width="1438" alt="word2" src="https://github.com/user-attachments/assets/a9c7acb4-8980-4dac-b2b2-14a29a1499ed">
+2 - On EC2 instance installed apache and different library packages and moving files to different folders
+<img width="1438" alt="word3" src="https://github.com/user-attachments/assets/796ded21-09e7-4502-8783-c01c1db07734">
+3 - Updating host name in config file to make sure its pointing to our RDS database endpoint
+<img width="1438" alt="word4" src="https://github.com/user-attachments/assets/0ea6dd1f-c04c-4398-8e53-3bc374bf06ea">
+4 - Changing security group for our EC2 instance to allow it to receive traffic from our database
+
+
