@@ -30,5 +30,10 @@
 3 - Updating host name in config file to make sure its pointing to our RDS database endpoint
 <img width="1438" alt="word4" src="https://github.com/user-attachments/assets/0ea6dd1f-c04c-4398-8e53-3bc374bf06ea">
 4 - Changing security group for our EC2 instance to allow it to receive traffic from our database
-
-
+<h2>Remediating EC2 Auto Scaling Group Modifications with EventBridge</h2>
+<img width="1431" alt="1" src="https://github.com/user-attachments/assets/3221fd13-53ad-46aa-b501-a715e68f3ce6">
+1 - Configuring event in EventBridge to launch any time an EC2 instance in our auto scaling group successfully terminates
+<img width="1431" alt="2" src="https://github.com/user-attachments/assets/d301f925-68cc-4cb7-bb84-3810470df00d">
+2 - Updating auto scaling group to desired capacity of 0 to initiate the event we configured in EventBridge to trigger our Lambda function
+<img width="1431" alt="3" src="https://github.com/user-attachments/assets/d3fd7287-3e5b-4d84-a302-d3d8a10b0b7c">
+3 - Checking CloudWatch logs to see the event was triggered and Lambda function ran to successfully reset the capacity of production group and log the development group changes
